@@ -1,21 +1,3 @@
-
-.final{
-    background-color: #D9CAB3;
-    color: black;
-    font-family:'Poppins', sans-serif;
-    text-align: center;
-}
-
-.tituloEncabezado{ 
-    text-align: center;
-    background-color: #87A8A4;
-    margin: -20px;  
-    padding: 10px;
-
-}
-
-
-/* Estilos navBar */
 *{
     margin:0;
     box-sizing: border-box;
@@ -24,11 +6,10 @@
 body{
     font-family: sans-serif;
     padding: 90px 20px 0px;
-    background-color: #EFE3D0;
 }
 
 .head-navbar{
-    background-color: #986D8E;
+    background-color: #0769e9;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -75,7 +56,6 @@ body{
 }
 
 .nav-menu-link:hover{
-    background-color: #D9CAB3;
+    background-color: #034574;
     transition: 0.5s;
 }
-/* Finaliza estilos navBar */

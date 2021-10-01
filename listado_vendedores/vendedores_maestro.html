@@ -6,65 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Vendedores</title>
     <link rel="stylesheet" href="estilos/styles.css">
+    
 </head>
 <body>
-    <header>
-        <!--Encabezado-->
-        <h1 class ="encabezado">¡Bienvenidos a BitApp!<br>
-            Su administrador de ventas en línea...
-        <!--Fin de Encabezado-->
-        </h1>
-        <img id="bitapp" src="Imagenes/logobitapp.png" alt="Persona">
-        <h4 id="bienvenida">
-            Listado de vendedores...
-        </h4>
-        <h4 id="estado">
-            Rol: Administrador <br>
-            Estado: Activo
-        </h4><br>
-        <img id="bitapp" src="Imagenes/iconopersona.jpg" alt="BitApp">
-        <!--Barra de navegacion-->
-            <nav class="barraNavegacion">
-                <button class="btn btn-light">Agregar Venta</button>
-
-                <button class="btn btn-light">Mis ventas</button>  
-
-                <button class="btn btn-light">Perfil</button> 
-
-                <button class="btn btn-light">Catálogo</button>      
-
-                <button class="btn btn-light">Vendedores</button>    
-            </nav> <br>
-        <!--Fin de Barra de navegacion-->
-        <h3 class="tituloEncabezado">Modificar vendedor:</h3> <br>
+    <header class="head-navbar">
+        <nav class="nav">
+            <a href="#" class="logo nav-link">BitApp</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Agregar Venta</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Mis Ventas</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Perfil</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Catálogo</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Vendedores</a></li>
+            </ul>                 
+        </nav>
     </header>
-    <section>
-        <p>Nombre:</p>
-        <input type="text" name="" id="">
-        <p>Tipo de Documento:</p>
+    <main>
+        <p class="tituloEncabezado"><b>Editar información:</b></p> <br>
+        
+        <p>Nombre:</p><br>
+        <input type="text" name="" id=""><br><br>
+        <p>Tipo de Documento:</p><br>
         <select>
             <option value="Documento">Cédula de Ciudadanía<a href=""></a></option>
             <option value="Documento">Cédula de Extranjería</option>
             <option value="Documento">Pasaporte</option>
-        </select>
-        <p>Documento de identidad:</p>
-        <input type="text" name="" id="" value="">
-        <p>Teléfono:</p>
-        <input type="tel" name="" id="">
-        <p>Correo:</p>
-        <input type="email" name="" id=""><br>
-        <p>Rol:</p>     
+        </select><br><br>
+        <p>Documento de identidad:</p><br>
+        <input type="text" name="" id="" value=""><br><br>
+        <p>Teléfono:</p><br>
+        <input type="tel" name="" id=""><br><br>
+        <p>Correo:</p><br>
+        <input type="email" name="" id=""><br><br><br>
+        <p>Rol:</p><br>     
         <select name="Rol" id="">
             <option value="Rol">Vendedor</option>
             <option value="Rol">Administrador</option>
         </select><br><br>
-        <p>Estado:</p>
+        <p>Estado:</p><br>
         <select name="Estado" id="">
             <option value="Estado">Activo</option>
             <option value="Estado">Inactivo</option>
         </select><br><br>
         <input type="submit" name="Guardar cambios" id="">
-    </section><br>
+    </main><br>
     
     <footer class ="final">
         <h5>Contáctenos!<br>
