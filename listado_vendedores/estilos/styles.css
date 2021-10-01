@@ -1,14 +1,25 @@
-html{
-    background-color: white;
+.encabezado{
+    background-color: #87A8A4;
+    color: white;
+    font-family:'Poppins', sans-serif;;
+    text-align: center;
 }
-#bitapp{
-    width: 100px;
-    height: 100px;
-    margin-left: 50px;
-    margin-top: 50px;
+.barraNavegacion{
+    display: inline-block;
+    background-color: #986D8E;
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
 }
-#estado{
-    background-color: red;
-    display: inline;
-    color: blue;
+.tituloEncabezado{ 
+    text-align: center;
+    background-color: #EFE3D0;  
+
+}
+.final{
+    background-color: #D9CAB3;
+    color: black;
+    font-family:'Poppins', sans-serif;
+    text-align: center;
 }
