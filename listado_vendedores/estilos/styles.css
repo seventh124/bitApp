@@ -1,6 +1,14 @@
+html{
+    background-color: white;
+}
 #bitapp{
     width: 100px;
     height: 100px;
     margin-left: 50px;
     margin-top: 50px;
+}
+#estado{
+    background-color: red;
+    display: inline;
+    color: blue;
 }
