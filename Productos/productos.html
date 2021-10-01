@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    
+    <!--Link de estilos css-->
+    <link rel="stylesheet" type="text/css" href="css/estilos producto.css">
+    
+    <!--Links de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+    <title>Productos</title>
+</head>
+<body>
+    <header>
+        <!--Encabezado-->
+        <h1 class ="encabezado">¡Bienvenidos a BitApp!<br>
+            Su tienda en línea
+        <!--Fin de Encabezado-->
+        </h1>
+        <!--Barra de navegacion-->
+            <nav class="barraNavegacion">
+                <button class="btn btn-light">INICIO</button>
+
+                <button class="btn btn-light">NOSOTROS</button>  
+
+                <select>
+                    <option>CATÁLOGO</option>
+                    <option>PRODUCTOS</option>
+                    <option>PROMOCIONES DEL MES</option>
+                </select> 
+
+                <select>
+                    <option>INICIAR SESIÓN</option>
+                    <option>SALIR</option>
+                </select>     
+
+                <button class="btn btn-light">REGISTRO</button>    
+            </nav> <br>
+        <!--Fin de Barra de navegacion-->
+    </header>
+    <main class ="centro">
+
+        <!--Titulo encabezado-->
+        <h3 class="tituloEncabezado">¡Bienvenido(a) (Nombre del usuario)! aquí puedes registrar, consultar y actualizar la infomación de los productos.</h3> <br>
+        <!--Fin de Titulo encabezado-->
+
+        <!--Registro de productos-->
+
+        <div class ="interfazRegistroProductos">
+
+        <!--Subtitulo: Registro de productos-->
+        <h2 class ="subtitulo">Registro de productos</h2> <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div>
+                            <label for="ID Producto">ID PRODUCTO: </label><br>
+                            <input type="text" size="40" placeholder = "Digite el ID del producto" required><br> <br>
+                            <label for="Descripcion">DESCRIPCIÓN: </label><br>
+                            <input type="text" size="40" placeholder = "Digite la descripción del producto" required> <br> <br>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div>
+                            <label for="Valor Unitario">VALOR UNITARIO: </label><br>
+                            <input type="text" size="40" placeholder = "Digite únicamente el valor unitario del producto en numeros" required> <br> <br>
+                            <label for="Estado">ESTADO: </label> <br>
+                            <input type="radio" value="Disponible">Disponible
+                            <input type="radio" value="No Disponible">No Disponible <br> <br>
+                        </div>
+                    </form>
+                </div>
+                <div><center>
+                    <button type="submit" class="btn btn-success">Registrar Producto</button><!--Falta poner la ventana con mensaje emergente que diga que el producto fue registrado-->
+                    </center>
+                </div>
+                    <br> <br> <br>
+            </div>
+        <!--Fin de Registro de productos-->
+
+        <!--Consulta de productos-->
+
+
+            <!--Subtitulo: Consulta de productos -->
+            <h2 class ="subtitulo">Consulta de productos</h2> <br>
+
+            <div class ="interfazConsultaProductos">
+                <center>
+                     Buscar producto por: 
+                <select>
+                    <option selected disabled>Selecciona una opcion</option>
+                    <option>ID producto</option>
+                    <option>Descripción</option>
+                    <option>Valor Unitario</option>
+                    <option>Estado</option>
+                    <option>Todas las opciones</option>
+                </select>
+                <input type="text" name="nombre" size="25" placeholder="Ingrese su búsqueda">
+                <button class="lupaBusqueda"><img src="./media/lupaBusqueda.png" alt="lupa de busqueda" width="15px"></button>              
+                <br>
+                <br>
+                <br>
+                <div class="tabla1">
+                <table>
+                    <tr>               
+                        <th>ID PRODUCTO        </th>
+                        <th>DESCRIPCIÓN        </th>
+                        <th>VALOR UNITARIO(COP)</th>
+                        <th>ESTADO             </th>
+                        <th>                   </th>
+                    </tr>
+                            <tr>
+                                <td>1234</td>
+                                <td>Gaseosa 400 ml</td>
+                                <td>2000</td>
+                                <td>Disponible</td>
+                                <td><button type="submit" class="btn btn-success">Editar producto</button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
+                            </tr>
+                            <tr>
+                                <td>4567</td>
+                                <td>Pan Bimbo Mediano</td>
+                                <td>3500</td>
+                                <td>No Disponible</td>
+                                <td><button type="submit" class="btn btn-success">Editar producto</button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
+                            </tr>
+                            <tr>
+                                <td>7890</td>
+                                <td>Leche alpina entera 1100 ml</td>
+                                <td>3800</td>
+                                <td>Disponible</td>
+                                <td><button type="submit" class="btn btn-success">Editar producto</button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
+                            </tr>
+                            <tr>
+                                <td>0123</td>
+                                <td>Jamón sánduche Zenú 450 gr</td>
+                                <td>7000</td>
+                                <td>No Disponible</td>
+                                <td><button type="submit" class="btn btn-success">Editar producto</button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
+                            </tr>
+                </table>
+                <br>
+                <br>
+            </center>
+        </div> 
+        
+        <!--Fin de Consulta de productos-->
+
+
+        <!--Actualizacion de productos-->
+        <div class ="interfazActualizacionProductos">
+            <!--Subtitulo: Actualización de productos -->
+            <h2 class ="subtitulo">Actualización de productos</h2> <br>
+                    
+                    <h4> <center> <strong>ID Producto:</strong> 1234 </center> </h4>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <form>
+                                <div>
+                                    <label for="Descripcion">DESCRIPCIÓN: </label><br>
+                                    <input type="text" size="40" placeholder = "Digite la descripción del producto" required> <br> <br>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <form>
+                                <div>
+                                    <label for="Valor Unitario">VALOR UNITARIO: </label><br>
+                                    <input type="text" size="40" placeholder = "Digite únicamente el valor unitario del producto en numeros" required> <br> <br>
+                                </div>
+                            </form>    
+                        </div>
+                        <div class="col-md-4">
+                            <form>
+                                <div>
+                                    <label for="Estado">ESTADO: </label><br>
+                                    <input type="radio" value="Disponible">Disponible  
+                                    <input type="radio" value="No Disponible">No Disponible <br> <br>
+                                </div>
+                            </form>
+                        </div>
+                        <div><center>
+                            <button type="submit" class="btn btn-success">Actualizar Producto</button><!--Falta poner la ventana con mensaje emergente que diga que el producto fue registrado-->
+                            </center>
+                        </div>
+                            <br> <br> <br>
+                    </div>
+        <!--Fin de Actualizacion de productos-->
+    </main>
+    <!--Final-->
+    <footer class ="final">
+        <h5>Contáctenos!<br>
+            Teléfono: 1234567890 <br>
+            Dirección: Calle x # xx-xx <br>
+            e-mail: <br>
+            Redes sociales: <br>
+        </h5>
+    </footer>
+    <!--Fin de Final-->
+</body>
+</html>
