@@ -1,0 +1,82 @@
+/*Estos son los estilos de pagina*/
+
+.encabezado{
+    background-color: #87A8A4;
+    color: white;
+    font-family:'Poppins', sans-serif;;
+    text-align: center;
+}
+
+.barraNavegacion{
+    display: inline-block;
+    background-color: #986D8E;
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.centro{
+    background-color: white;
+    color: black;
+    font-family: 'Yaldevi', sans-serif;;
+}
+
+.tituloEncabezado{ 
+    text-align: center;
+    background-color: #EFE3D0;  
+
+}
+
+.subtitulo{
+    text-align: center;
+    background-color: #87A8A4;
+    color: white;
+
+}
+.final{
+    background-color: #D9CAB3;
+    color: black;
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+
+
+.tabla1
+table, th, td{
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+th{
+    background-color: #87A8A4;
+    border-bottom: solid 2px #506D84;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+
+
+
+.interfazRegistroProductos{
+    font-weight: bold;
+
+}
+
+.interfazConsultaProductos{
+    
+
+}
+.interfazActualizacionProductos{
+    font-weight: bold;
+
+}
+
+.lupaBusqueda:hover{
+    cursor: pointer;
+}
