@@ -1,36 +1,48 @@
 
-.final{
-    background-color: #D9CAB3;
-    color: black;
-    font-family:'Poppins', sans-serif;
-    text-align: center;
-}
-
-.tituloEncabezado{ 
-    text-align: center;
-    background-color: #986D8E;
-    margin: -20px;  
-    padding: 10px;
-
-}
-
-
-/* Estilos navBar */
+/*Estos son los estilos de pagina*/
 *{
     margin:0;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif;;
-    text-align: center;
+    font-family:'Poppins', 'sans-serif';
+    
+    
+}
+main{
+    font-family: 'Poppins', 'sans-serif';
 }
 
+.subtitulo{
+    text-align: center;
+    background-color: #87A8A4;
+    color: white;
+    padding: 10px;
+    
+}
+
+.final{
+    background-color: #D9CAB3;
+    color: black;
+    font-family: 'Poppins', 'sans-serif';
+    text-align: center;
+    
+}
+
+.tabla{
+    line-height: 20px;
+    display: inline;
+    place-items: left;
+}
+/* Estilos navBar */
 body{
-    font-family: sans-serif;
-    padding: 90px 20px 0px;
+    font-family: 'Poppins', 'sans-serif';
+    padding: 90px 0px 0px;
     background-color: #EFE3D0;
+    text-align: center;
+    
 }
 
 .head-navbar{
-    background-color: #87A8A4 ;
+    background-color: #986D8E ;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -43,6 +55,7 @@ body{
     justify-content: space-between;
     max-width: 992px;
     margin: 0 auto;
+    background-color: #986D8E;
 }
 
 .nav-link{
