@@ -8,7 +8,7 @@
 
 .tituloEncabezado{ 
     text-align: center;
-    background-color: #87A8A4;
+    background-color: #986D8E;
     margin: -20px;  
     padding: 10px;
 
@@ -19,6 +19,8 @@
 *{
     margin:0;
     box-sizing: border-box;
+    font-family:'Poppins', sans-serif;;
+    text-align: center;
 }
 
 body{
@@ -28,7 +30,7 @@ body{
 }
 
 .head-navbar{
-    background-color: #986D8E;
+    background-color: #87A8A4 ;
     height: 80px;
     position: fixed;
     width: 100%;
