@@ -20,8 +20,8 @@ main{
 }
 
 .final{
-    background-color: #D9CAB3;
-    color: black;
+    background-color: #986D8E;
+    color: white;
     font-family: 'Poppins', 'sans-serif';
     text-align: center;
     
@@ -31,6 +31,7 @@ main{
     line-height: 20px;
     display: inline;
     place-items: left;
+    
 }
 /* Estilos navBar */
 body{

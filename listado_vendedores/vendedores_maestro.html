@@ -23,33 +23,26 @@
         </nav>
     </header>
     <main>
+        <h1 class="bienvenida">Bienvenid@</h1>
         <h2 class ="subtitulo">Modificar Vendedor:</h2> <br>
-        
-        <p>Nombre:</p><br>
-        <input type="text" name="" id="" placeholder="Escriba su nombre completo"><br><br>
-        <p>Tipo de Documento:</p><br>
-        <select>
-            <option value="Documento">Cédula de Ciudadanía<a href=""></a></option>
-            <option value="Documento">Cédula de Extranjería</option>
-            <option value="Documento">Pasaporte</option>
-        </select><br><br>
-        <p>Documento de identidad:</p><br>
-        <input type="text" name="" id="" value="" placeholder="Número de identidad"><br><br>
-        <p>Teléfono:</p><br>
-        <input type="tel" name="" id="" placeholder="Digite su teléfono"><br><br>
-        <p>Correo:</p><br>
-        <input type="email" name="" id="" placeholder="Escriba su correo"><br><br><br>
-        <p>Rol:</p><br>     
-        <select name="Rol" id="">
-            <option value="Rol">Vendedor</option>
-            <option value="Rol">Administrador</option>
-        </select><br><br>
-        <p>Estado:</p><br>
-        <select name="Estado" id="">
-            <option value="Estado">Activo</option>
-            <option value="Estado">Inactivo</option>
-        </select><br><br>
-        <input type="submit" name="Guardar cambios" id="">
+        <form action="" class="formulario">
+            <label for="">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo"><br>
+            <label for="">Tipo de Documento</label><br>
+            <select name="tipo" id="tipo">
+                <option value="" disabled>Seleccione su tipo de documento</option>
+                <option value="1">Cédula de Ciudadanía</option>
+                <option value="2">Pasaporte</option>
+                <option value="3">Cédula de Extranjería</option>
+            </select><br>
+            <label for="">Documento:</label><br>
+            <input type="text" name="id" id="id" placeholder="Ingrese su documento"><br>
+            <label for="">Teléfono</label><br>
+            <input type="tel" name="phone" id="phone" placeholder="Ingrese su teléfono"><br>
+            <label for="">Correo:</label><br>
+            <input type="email" name="" id="">
+        </form>
+
     </main><br>
     
     <footer class ="final">
