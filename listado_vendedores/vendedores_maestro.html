@@ -27,20 +27,30 @@
         <h2 class ="subtitulo">Modificar Vendedor:</h2> <br>
         <form action="" class="formulario">
             <label for="">Nombre:</label><br>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo"><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre completo"><br><br>
             <label for="">Tipo de Documento</label><br>
             <select name="tipo" id="tipo">
-                <option value="" disabled>Seleccione su tipo de documento</option>
+                <option value="" disabled>Tipo de Documento</option>
                 <option value="1">Cédula de Ciudadanía</option>
                 <option value="2">Pasaporte</option>
                 <option value="3">Cédula de Extranjería</option>
-            </select><br>
+            </select><br><br>
             <label for="">Documento:</label><br>
-            <input type="text" name="id" id="id" placeholder="Ingrese su documento"><br>
+            <input type="text" name="id" id="id" placeholder="Ingrese número de documento"><br><br>
             <label for="">Teléfono</label><br>
-            <input type="tel" name="phone" id="phone" placeholder="Ingrese su teléfono"><br>
+            <input type="tel" name="phone" id="phone" placeholder="Ingrese número de teléfono"><br><br>
             <label for="">Correo:</label><br>
-            <input type="email" name="" id="">
+            <input type="email" name="correo" id="correo" placeholder="Escriba su correo electrónico"><br><br>
+            <label for="">Rol:</label><br>
+            <select name="rol" id="rol">
+                <option value="1">Administrador</option>
+                <option value="2">Vendedor</option>
+            </select><br><br>
+            <label for="">Estado:</label><br>
+            <select name="estado" id="estado">
+                <option value="1">Activo</option>
+                <option value="2">Inactivo</option>
+            </select><br><br>
         </form>
 
     </main><br>
