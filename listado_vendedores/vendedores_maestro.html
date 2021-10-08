@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Vendedores</title>
     <link rel="stylesheet" href="estilos/styles.css">
-    <link rel="stylesheet" href="estilos/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	
 </head>
 <body>
     <header class="head-navbar">
@@ -56,6 +57,22 @@
                 <option value="2">Inactivo</option>
             </select><br><br>
         </form>
+        <div class="contenedor">
+            <article>
+                <button id="btn-abrir-popup" class="btn-abrir-popup">Actualizar</button>
+            </article>
+    
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>Vendedor actualizado</h3>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <script src="boton.js"></script>
+
 
     </main><br>
     
