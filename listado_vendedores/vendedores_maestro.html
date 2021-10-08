@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Vendedores</title>
     <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -27,20 +31,20 @@
         <h2 class ="subtitulo">Modificar Vendedor:</h2> <br>
         <form action="" class="formulario">
             <label for="">Nombre:</label><br>
-            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre completo"><br><br>
+            <input class="inp-form" type="text" name="nombre" id="nombre" placeholder="Escriba su nombre completo"><br><br>
             <label for="">Tipo de Documento</label><br>
             <select name="tipo" id="tipo">
-                <option value="" disabled>Tipo de Documento</option>
+                <option value="" disabled selected>Tipo de Documento</option>
                 <option value="1">Cédula de Ciudadanía</option>
                 <option value="2">Pasaporte</option>
                 <option value="3">Cédula de Extranjería</option>
             </select><br><br>
             <label for="">Documento:</label><br>
-            <input type="text" name="id" id="id" placeholder="Ingrese número de documento"><br><br>
+            <input class="inp-form" type="text" name="id" id="id" placeholder="Ingrese número de documento"><br><br>
             <label for="">Teléfono</label><br>
-            <input type="tel" name="phone" id="phone" placeholder="Ingrese número de teléfono"><br><br>
+            <input class="inp-form" type="tel" name="phone" id="phone" placeholder="Ingrese número de teléfono"><br><br>
             <label for="">Correo:</label><br>
-            <input type="email" name="correo" id="correo" placeholder="Escriba su correo electrónico"><br><br>
+            <input class="inp-form" type="email" name="correo" id="correo" placeholder="Escriba su correo electrónico"><br><br>
             <label for="">Rol:</label><br>
             <select name="rol" id="rol">
                 <option value="1">Administrador</option>
