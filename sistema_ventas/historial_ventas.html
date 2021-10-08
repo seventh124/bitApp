@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--Links Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+        
+    <!--Link de estilos css-->
+    <link rel="stylesheet" type="text/css" href="sales.css">
+        
+    <!--Links de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+    <title>Historial Ventas</title>
+</head>
+<body>
+    <header class="head-navbar">
+            <nav class="nav">
+                <a href="#" class="logo nav-link">BitApp</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Agregar Venta</a></li>
+                    <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Mis Ventas</a></li>
+                    <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Perfil</a></li>
+                    <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Catálogo</a></li>
+                    <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Vendedores</a></li>
+                </ul>                 
+            </nav>
+    </header>
+    
+    <main class ="centro">
+        <!--Titulo encabezado-->
+        <br><h3 class="tituloEncabezado">¡Bienvenido(a) (Nombre del usuario)! </h3> 
+        <!--Fin de Titulo encabezado-->
+
+        <!--Historial de Ventas-->
+
+        <div class ="interfazHistorialVentas">
+        
+            <!--Subtitulo: Historial de Ventas Realizadas-->
+            <h2 class ="subtitulo">Historial de Ventas Realizadas</h2> <br>
+        
+            <div class ="interfazHistorialVentas">
+                <center>
+                        <p>Desde: <input type="date" size="60">  Hasta: <input type="date" size="60" ></p>
+                        Buscar por: 
+                        <input type="text" name="nombre" size="25" placeholder="Ingrese el ID de la venta">
+                        <input type="text" name="nombre" size="25" placeholder="Ingrese el ID del cliente">
+                        <input type="text" name="nombre" size="25" placeholder="Ingrese el Nombre del cliente">
+                    <button class="lupaBusqueda"><img src="./img_sales/lupaBusqueda.png" alt="lupa de busqueda" width="15px"></button>  
+                    <br>
+                    <br>
+                    <div class="tabla1">
+                        <table>
+                            <tr>               
+                                <th>ID VENTA         </th>
+                                <th>ID CLIENTE       </th>
+                                <th>NOMBRE CLIENTE   </th>
+                                <th>VENDEDOR         </th>
+                                <th>VALOR TOTAL      </th>
+                                <th>FECHA            </th>
+                                <th>                 </th>
+                                <!--REVISAR CUALES SON LOS TIPOS DE ROLES QUE EXISTEN EN ESTE PROYECTO (USUARIO?VENDEDOR?)-->
+                            </tr>
+                                    <tr>
+                                        <td>0001            </td>
+                                        <td>1096244597      </td>
+                                        <td>Adriana Pico    </td>
+                                        <td>VENDEDOR1       </td>
+                                        <td>1111            </td>
+                                        <td>DD/MM/AAAA      </td>
+                                        <td><button type="submit" class="btn btn-success">Editar Venta</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0002            </td>
+                                        <td>1094885424      </td>
+                                        <td>Julian Pinto    </td>
+                                        <td>VENDEDOR2       </td>
+                                        <td>2222            </td>
+                                        <td>DD/MM/AAAA      </td>
+                                        <td><button type="submit" class="btn btn-success">Editar Venta</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0003            </td>
+                                        <td>1073168165      </td>
+                                        <td>Ingrid Bernal   </td>
+                                        <td>VENDEDOR3       </td>
+                                        <td>3333            </td>
+                                        <td>DD/MM/AAAA      </td>
+                                        <td><button type="submit" class="btn btn-success">Editar Venta</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0004            </td>
+                                        <td>1032367158      </td>
+                                        <td>Jose Medina     </td>
+                                        <td>VENDEDOR4       </td>
+                                        <td>4444            </td>
+                                        <td>DD/MM/AAAA      </td>
+                                        <td><button type="submit" class="btn btn-success">Editar Venta</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>0005           </td>
+                                        <td>1075301352      </td>
+                                        <td>Nicolas Ramirez </td>
+                                        <td>VENDEDOR5       </td>
+                                        <td>5555            </td>
+                                        <td>DD/MM/AAAA      </td>
+                                        <td><button type="submit" class="btn btn-success">Editar Venta</button></td>
+                                    </tr>
+                                                         
+                        </table>
+                        <br>
+                        <br>
+                </center>
+            </div>
+        <!--Fin Historial Ventas Realizadas-->
+
+        <!--Final-->
+    <footer class ="final">
+            <h5>¡Contáctenos!<br>
+            Teléfono: 1234567890 <br>
+            Dirección: Calle x # xx-xx <br>
+            e-mail:bitapp@bitapp.com <br>
+            Redes sociales: @bitapp<br>
+            </h5>
+    </footer>
+        <!--Fin de Final-->
+    </main>
+    <br>
+    
+</body>
+</html>
