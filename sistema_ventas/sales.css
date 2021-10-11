@@ -1,7 +1,6 @@
-/*Estos son los estilos para todas las paginas*/
+/*Estos son los estilos de pagina*/
 
 /* Estilos navBar */
-
 body{
     font-family: 'Poppins', sans-serif;
     padding: 90px 20px 0px;
@@ -62,15 +61,34 @@ body{
 }
 /* Finaliza estilos navBar */
 
-.centro{
-    background-color:#EFE3D0;
-    color: black;
-    font-family: 'Yaldevi', sans-serif;;
+.encabezado{
+    background-color: #87A8A4;
+    color: white;
+    font-family:'Poppins', sans-serif;;
+    text-align: center;
 }
 
+.encabezadosales{
+    position: relative;
+    display: inline-block;
+    color: black;
+    font-family:'Poppins', sans-serif;;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .tituloEncabezado{ 
     text-align: center;
-    background-color:#EFE3D0;  
+    background-color: #EFE3D0;  
 
 }
 
@@ -80,16 +98,13 @@ body{
     color: white;
 
 }
+
 .final{
     background-color: #986D8E;
-    color: white;
+    color: black;
     font-family:'Poppins', sans-serif;
     text-align: center;
 }
-
-/*Final de estilos para todas las paginas*/
-
-/*Inicio estilos propios para el cuerpo de la pagina*/
 
 .tabla1
 table, th, td{
@@ -107,39 +122,29 @@ tr:nth-child(even){
     background-color: #ddd;
 }
 
-.ventanaEmergente{
-    background-color:#986D8E;
-    width: 20%;
+
+.interfazSistemaVentas{
+    font-weight: bold;
+
+}
+.ventana_emergente{
+    background:#986D8E ;
+    width:25%;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    font-size: 18px;
     text-align: center;
-    padding: 30px;
-    min-height: 125px;
-    border-radius: 20px;
+    padding: 33px;
+    min-height: 24px;
+    border-radius: 22px;
     position: absolute;
     left: 37%;
-    top: 37%;
+    top:95%;
     display: none;
 }
-
-
-.interfazRegistroProductos{
-    font-weight: bold;
-
-}
-
-.interfazActualizacionProductos{
-    font-weight: bold;
-
-}
-
-#cerrarVentanaEmergente{
+#cerrar{
     position: absolute;
-    right: 3px;
-    top: 1px;
-}
-
-.lupaBusqueda:hover{
-    cursor: pointer;
+    right:12px;
+    top: 5%;
+      
 }

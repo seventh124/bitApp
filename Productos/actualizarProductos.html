@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    
+    <!--Link de estilos css-->
+    <link rel="stylesheet" type="text/css" href="css/estilos producto.css">
+    
+    <!--Links de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+    <title>Actualizar Productos</title>
+</head>
+<body>
+    <header class="head-navbar">
+        <!--Barra de navegacion-->
+        <nav class="nav">
+            <a href="#" class="logo nav-link">BitApp</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Agregar Venta</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Mis Ventas</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Perfil</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Catálogo</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Vendedores</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Salir</a></li>
+            </ul>                 
+        </nav>
+        <!--Fin de Barra de navegacion-->
+    </header>
+    <main class ="centro">
+        <br>
+
+        <!--Titulo encabezado-->
+        <h3 class="tituloEncabezado">¡Bienvenido(a) (Nombre del usuario)! aquí puedes editar y actualizar la infomación de los productos.</h3> <br>
+        <!--Fin de Titulo encabezado-->
+
+    <!--Actualizacion de productos-->
+        <div class ="interfazActualizacionProductos">
+            <!--Subtitulo: Actualización de productos -->
+            <h2 class ="subtitulo">Actualización de productos</h2> <br>
+                    
+                    <h4> <center> <strong>ID Producto:</strong> (Numero del ID del producto) </center> </h4>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <form>
+                                <div>
+                                    <label for="Descripcion">DESCRIPCIÓN: </label><br>
+                                    <input type="text" size="40" placeholder = "Digite la descripción del producto" required> <br> <br>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <form>
+                                <div>
+                                    <label for="Valor Unitario">VALOR UNITARIO: </label><br>
+                                    <input type="text" size="40" placeholder = "Digite únicamente el valor unitario del producto en numeros" required> <br> <br>
+                                </div>
+                            </form>    
+                        </div>
+                        <div class="col-md-4">
+                            <form>
+                                <div>
+                                    <label for="Estado">ESTADO: </label><br>
+                                    <input type="radio" value="Disponible">Disponible  
+                                    <input type="radio" value="No Disponible">No Disponible <br> <br>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Ventana Emergente Registro de Productos-->
+                
+                            <!--Mensaje Ventana Emergente-->
+                            <div class="ventanaEmergente" id="ventanaEmergente">¡Su producto fue actualizado con éxito!
+                            <!--Boton cerrar Ventana Emergente-->
+                            <div id="cerrarVentanaEmergente"><a href="javascript:cerrarVentanaEmergente()"><img src="media/error.png" alt="cerrar" width="25px"></a>
+                            </div>
+                            <!--Boton aceptar Ventana Emergente-->
+                            <br><a href="javascript:cerrarVentanaEmergente()"><button type="submit" class="btn btn-success">Aceptar</button></a>
+                        </div>
+
+                        <div>
+                            <!--Aparición de ventana emergente para confirmar actualización de producto aplicado en el botón actualizar producto-->
+                            <center>
+                            <a href="javascript: abrirVentanaEmergente()"><button type="submit" class="btn btn-success">Actualizar Producto</button></a>
+                            </center>
+                        </div>
+                            <br> <br> <br>
+                    </div>
+        <!--Fin de Actualizacion de productos-->
+    </main>
+    <!--Final-->
+    <footer class ="final">
+        <h5>Contáctenos!<br>
+            Teléfono: 1234567890 <br>
+            Dirección: Calle x # xx-xx <br>
+            e-mail: <br>
+            Redes sociales: <br>
+        </h5>
+    </footer>
+    <!--Fin de Final-->
+
+    <!--Codigo Js-->
+
+    <script>
+        function abrirVentanaEmergente(){
+            document.getElementById("ventanaEmergente").style.display="block";
+        }
+        function cerrarVentanaEmergente(){
+            document.getElementById("ventanaEmergente").style.display="none";
+        }
+    </script>
+
+    <!--Final de Codigo Js-->
+</body>
+</html>

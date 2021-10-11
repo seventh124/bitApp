@@ -20,35 +20,23 @@
     <title>Productos</title>
 </head>
 <body>
-    <header>
-        <!--Encabezado-->
-        <h1 class ="encabezado">¡Bienvenidos a BitApp!<br>
-            Su tienda en línea
-        <!--Fin de Encabezado-->
-        </h1>
+    <header class="head-navbar">
         <!--Barra de navegacion-->
-            <nav class="barraNavegacion">
-                <button class="btn btn-light">INICIO</button>
-
-                <button class="btn btn-light">NOSOTROS</button>  
-
-                <select>
-                    <option>CATÁLOGO</option>
-                    <option>PRODUCTOS</option>
-                    <option>PROMOCIONES DEL MES</option>
-                </select> 
-
-                <select>
-                    <option>INICIAR SESIÓN</option>
-                    <option>SALIR</option>
-                </select>     
-
-                <button class="btn btn-light">REGISTRO</button>    
-            </nav> <br>
+        <nav class="nav">
+            <a href="#" class="logo nav-link">BitApp</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Agregar Venta</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Mis Ventas</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Perfil</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Catálogo</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Vendedores</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Salir</a></li>
+            </ul>                 
+        </nav>
         <!--Fin de Barra de navegacion-->
     </header>
     <main class ="centro">
-
+        <br>
         <!--Titulo encabezado-->
         <h3 class="tituloEncabezado">¡Bienvenido(a) (Nombre del usuario)! aquí puedes registrar, consultar y actualizar la infomación de los productos.</h3> <br>
         <!--Fin de Titulo encabezado-->
@@ -82,12 +70,27 @@
                         </div>
                     </form>
                 </div>
-                <div><center>
-                    <button type="submit" class="btn btn-success">Registrar Producto</button><!--Falta poner la ventana con mensaje emergente que diga que el producto fue registrado-->
+                <!--Ventana Emergente Registro de Productos-->
+
+                    <!--Mensaje Ventana Emergente-->
+                    <div class="ventanaEmergente" id="ventanaEmergente">¡Su producto fue registrado con éxito!
+                    <!--Boton cerrar Ventana Emergente-->
+                    <div id="cerrarVentanaEmergente"><a href="javascript:cerrarVentanaEmergente()"><img src="media/error.png" alt="cerrar" width="25px"></a>
+                    </div>
+                    <!--Boton aceptar Ventana Emergente-->
+                    <a href="javascript:cerrarVentanaEmergente()"><button type="submit" class="btn btn-success">Aceptar</button></a>
+                </div>
+                
+                <div>
+                    <!--Aparición de ventana emergente para confirmar registro de producto aplicado en el botón registrar producto-->
+                    <center>
+                    <a href="javascript: abrirVentanaEmergente()"><button type="submit" class="btn btn-success">Registrar Producto</button></a>
                     </center>
                 </div>
                     <br> <br> <br>
             </div>
+            <!--Fin de Ventana Emergente Registro de Productos-->
+
         <!--Fin de Registro de productos-->
 
         <!--Consulta de productos-->
@@ -126,28 +129,28 @@
                                 <td>Gaseosa 400 ml</td>
                                 <td>2000</td>
                                 <td>Disponible</td>
-                                <td><button type="submit" class="btn btn-success">Editar producto</button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
+                                <td><button type="submit" class="btn btn-clear"><a href="actualizarProductos.html" target="blank"><strong>Editar producto</strong></a></button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
                             </tr>
                             <tr>
                                 <td>4567</td>
                                 <td>Pan Bimbo Mediano</td>
                                 <td>3500</td>
                                 <td>No Disponible</td>
-                                <td><button type="submit" class="btn btn-success">Editar producto</button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
+                                <td><button type="submit" class="btn btn-clear"><a href="actualizarProductos.html" target="blank"><strong>Editar producto</strong></a></button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
                             </tr>
                             <tr>
                                 <td>7890</td>
                                 <td>Leche alpina entera 1100 ml</td>
                                 <td>3800</td>
                                 <td>Disponible</td>
-                                <td><button type="submit" class="btn btn-success">Editar producto</button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
+                                <td><button type="submit" class="btn btn-clear"><a href="actualizarProductos.html" target="blank"><strong> Editar producto</strong></a></button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
                             </tr>
                             <tr>
                                 <td>0123</td>
                                 <td>Jamón sánduche Zenú 450 gr</td>
                                 <td>7000</td>
                                 <td>No Disponible</td>
-                                <td><button type="submit" class="btn btn-success">Editar producto</button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
+                                <td><button type="submit" class="btn btn-clear"><a href="actualizarProductos.html" target="blank"> <strong>Editar producto</strong></a></button></td> <!--Cada botón de editar debe llevar a la parte de la Actualización de producto-->
                             </tr>
                 </table>
                 <br>
@@ -157,48 +160,6 @@
         
         <!--Fin de Consulta de productos-->
 
-
-        <!--Actualizacion de productos-->
-        <div class ="interfazActualizacionProductos">
-            <!--Subtitulo: Actualización de productos -->
-            <h2 class ="subtitulo">Actualización de productos</h2> <br>
-                    
-                    <h4> <center> <strong>ID Producto:</strong> 1234 </center> </h4>
-                    <br>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <form>
-                                <div>
-                                    <label for="Descripcion">DESCRIPCIÓN: </label><br>
-                                    <input type="text" size="40" placeholder = "Digite la descripción del producto" required> <br> <br>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-md-4">
-                            <form>
-                                <div>
-                                    <label for="Valor Unitario">VALOR UNITARIO: </label><br>
-                                    <input type="text" size="40" placeholder = "Digite únicamente el valor unitario del producto en numeros" required> <br> <br>
-                                </div>
-                            </form>    
-                        </div>
-                        <div class="col-md-4">
-                            <form>
-                                <div>
-                                    <label for="Estado">ESTADO: </label><br>
-                                    <input type="radio" value="Disponible">Disponible  
-                                    <input type="radio" value="No Disponible">No Disponible <br> <br>
-                                </div>
-                            </form>
-                        </div>
-                        <div><center>
-                            <button type="submit" class="btn btn-success">Actualizar Producto</button><!--Falta poner la ventana con mensaje emergente que diga que el producto fue registrado-->
-                            </center>
-                        </div>
-                            <br> <br> <br>
-                    </div>
-        <!--Fin de Actualizacion de productos-->
     </main>
     <!--Final-->
     <footer class ="final">
@@ -210,5 +171,18 @@
         </h5>
     </footer>
     <!--Fin de Final-->
+
+    <!--Codigo Js-->
+
+    <script>
+        function abrirVentanaEmergente(){
+            document.getElementById("ventanaEmergente").style.display="block";
+        }
+        function cerrarVentanaEmergente(){
+            document.getElementById("ventanaEmergente").style.display="none";
+        }
+    </script>
+
+    <!--Final de Codigo Js-->
 </body>
 </html>
