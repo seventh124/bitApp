@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" 
+    crossorigin="anonymous"></script>
+    <!--Fin Link Bootstrap-->
+
+    <!--Link de estilos css-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <!--fin de estilos css-->
+
+    <!--Links de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+
+   
+    
+</head>
+<body>
+
+<!--Encabezado-->
+<header class="head-navbar">
+    <nav class="nav">
+        <a href="#" class="logo nav-link">BitApp</a>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Agregar Venta</a></li>
+            <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Mis Ventas</a></li>
+            <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Perfil</a></li>
+            <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Catálogo</a></li>
+            <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Vendedores</a></li>
+            <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Salir</a></li>
+        </ul>                 
+    </nav>
+</header>
+<!--Fin de Encabezado-->
+    
+<!--Barra de navegacion-->
+<nav class="barraNavegacion"></nav>
+<!--Fin de Barra de navegacion-->
+
+<!--Titulo encabezado-->
+<h3 class="tituloEncabezado">¡Bienvenido(a) (Nombre del Vendedor)! .</h3> <br>
+<!--Fin de Titulo encabezado-->
+
+<!--Registro de productos-->
+
+
+
+
+<!--Subtitulo: Registro clientes y de la venta-->
+<h2 class ="subtitulo">Registro De Venta</h2> <br><br><br>
+
+<div class="row">
+    <div class="col-md-6">
+    <h5>Datos Del Cliente</h5>
+    <input type="text" size="30" placeholder = "Digite el Cod del Cliente" required>
+    <input type="text" size="30" placeholder = "Digite el Nombre del cliente" required><br><br>
+    <input type="text" size="30" placeholder = "Digite el Teléfono del Cliente" required>
+    <input type="text" size="30" placeholder = "Digite la Dirección del Cliente" required><br><br>
+</div>
+
+<br><br><br><br><br><br>
+<div class="row">
+    <div class="col-md-6">
+    <h5>Datos Del Producto</h5><br>
+    
+    <h6>Seleccione la categoria del producto</h6>
+    <select>
+    <option>Categoría 1</option>
+    <option>Categoría 2</option>
+    <option>Categoría 3</option>
+    </select><br><br>
+
+    <input type="text" size="30" placeholder = "Digite el codigo del producto" required>
+    <input type="text" size="30" placeholder = "Se llena al digitar El codigo" required><br><br>
+    <input type="text" size="30" placeholder = "Digite la cantidad de productos" required>
+    <input type="text" size="30" placeholder = "valor llena cuando se digita la cantidad" required> <br><br>
+
+   
+    <div class="boton2" >
+        <button>
+        <p><img src="img/anadir-carrito.png" width="17" height="17"> Agregar otro producto</p>
+       </button><br><br><br>
+    </div>
+    </div>
+    
+    <div class="verticalline"></div>    
+</div>
+</div>
+<!--fin registro de la venta-->
+
+ <!--tabla resumen pedido--> 
+
+<div class="row">
+    <div class="col-md-12">
+        
+
+ <div id="contenedor">
+    <h3>Resumen del pedido</h3>
+     <div id="tabla1">
+        <table border="1" align="center">
+            <tr>
+                <td><b>Nro</td>
+                <td><b>Producto</td>
+                <td><b>Cod</td>
+                <td><b>Precio</td>
+                
+            </tr>
+            <tr>
+            <td>1</td>
+            <td>Salsa</td>
+            <td>1023</td>
+            <td>1500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>papas</td>
+                <td>1032</td>
+                <td>2000</td>
+                </tr>
+    </table>
+    </div>
+    <div id="tabla2">
+    <table border="1">
+    <tr>
+    <td><b>Cantidad</td>
+    <td><b>Total</td>
+    <td><b>Seleccionar</td>
+    <td><b>Eliminar</td>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>1500</td>
+    <td><img src="img/comprobado.png" width="17" height="17" alt="aceptar compra"></td>
+    <td><img src="img/eliminar.png" width="17" height="17" alt="Eliminar compra"></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>400</td>
+        <td><img src="img/comprobado.png" width="17" height="17" alt="aceptar compra"></td>
+        <td><img src="img/eliminar.png" width="17" height="17" alt="Eliminar compra"></td>
+        </tr>
+    
+    </div>
+</table>
+
+    </table> <br><br>
+    <div  class="btn-toolbar">
+        <button class="btn-abrir-popup" id="btn-abrir-popup" style="background-color: #87A8A4;" type="button" id="btnSubmit" class="btn btn-primary btn-sm">Confirmar Venta </button>
+        <button style="background-color: brown;" type="button" id="btnCancel" class="btn btn-primary btn-sm">Cancelar venta</button>
+        <button style="background-color: #D9CAB3; color: black;" type="button" id="btnCancel" class="btn btn-primary btn-sm">Modificar ventas</button>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h4>Venta Registrada</h4>
+        </div>
+        <!-- <input type="submit" class="btn-submit" value="Aceptar"> -->
+    </div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<script src="popup.js"></script>
+
+<!--fin tabla resumen pedido--><br><br>
+
+<footer class ="final">
+    <h5>Contáctenos!<br>
+        Teléfono: 1234567890 <br>
+        Dirección: Calle x # xx-xxx <br>
+        e-mail: <br>
+        Redes sociales: <br>
+    </h5>
+</footer>
+</body>
+</html>
+
+<!--fin-->
