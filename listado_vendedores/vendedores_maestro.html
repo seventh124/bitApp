@@ -5,50 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Vendedores</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	
 </head>
 <body>
-    <header>
-        <img id="bitapp" src="Imagenes/logobitapp.png" alt="Persona">
-        <h4 id="bienvenida">
-            Listado de vendedores...
-        </h4>
-        <h4 id="estado">
-            Rol: Administrador <br>
-            Estado: Activo
-        </h4>
-        <img id="bitapp" src="Imagenes/iconopersona.jpg" alt="BitApp">
-        
+    <header class="head-navbar">
+        <nav class="nav">
+            <a href="#" class="logo nav-link">BitApp</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Agregar Venta</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Mis Ventas</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Perfil</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Catálogo</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Vendedores</a></li>
+                <li class="nav-menu-item"><a href="" class="nav-menu-link nav-link">Salir</a></li>
+            </ul>                 
+        </nav>
     </header>
-    <section>
-        <p>Nombre:</p>
-        <input type="text" name="" id="">
-        <p>Tipo de Documento:</p>
-        <select>
-            <option value="Documento">Cédula de Ciudadanía<a href=""></a></option>
-            <option value="Documento">Cédula de Extranjería</option>
-            <option value="Documento">Pasaporte</option>
-        </select>
-        <p>Documento de identidad:</p>
-        <input type="text" name="" id="" value="">
-        <p>Teléfono:</p>
-        <input type="tel" name="" id="">
-        <p>Correo:</p>
-        <input type="email" name="" id=""><br>
-        <p>Rol:</p>     
-        <select name="Rol" id="">
-            <option value="Rol">Vendedor</option>
-            <option value="Rol">Administrador</option>
-        </select><br><br>
-        <p>Estado:</p>
-        <select name="Estado" id="">
-            <option value="Estado">Activo</option>
-            <option value="Estado">Inactivo</option>
-        </select><br><br>
-        <input type="submit" name="Guardar cambios" id="">
-    </section><br>
+    <main>
+        <h1 class="bienvenida">Bienvenid@</h1>
+        <h2 class ="subtitulo">Modificar Vendedor:</h2> <br>
+        <form action="" class="formulario">
+            <label for="">Nombre:</label><br>
+            <input class="inp-form" type="text" name="nombre" id="nombre" placeholder="Escriba su nombre completo"><br><br>
+            <label for="">Tipo de Documento</label><br>
+            <select name="tipo" id="tipo">
+                <option value="" disabled selected>Tipo de Documento</option>
+                <option value="1">Cédula de Ciudadanía</option>
+                <option value="2">Pasaporte</option>
+                <option value="3">Cédula de Extranjería</option>
+            </select><br><br>
+            <label for="">Documento:</label><br>
+            <input class="inp-form" type="text" name="id" id="id" placeholder="Ingrese número de documento"><br><br>
+            <label for="">Teléfono</label><br>
+            <input class="inp-form" type="tel" name="phone" id="phone" placeholder="Ingrese número de teléfono"><br><br>
+            <label for="">Correo:</label><br>
+            <input class="inp-form" type="email" name="correo" id="correo" placeholder="Escriba su correo electrónico"><br><br>
+            <label for="">Rol:</label><br>
+            <select name="rol" id="rol">
+                <option value="1">Administrador</option>
+                <option value="2">Vendedor</option>
+            </select><br><br>
+            <label for="">Estado:</label><br>
+            <select name="estado" id="estado">
+                <option value="1">Activo</option>
+                <option value="2">Inactivo</option>
+            </select><br><br>
+        </form>
+        <div class="contenedor">
+            <article>
+                <button id="btn-abrir-popup" class="btn-abrir-popup">Actualizar</button>
+            </article>
     
-    <footer>
-        <a href="#">Información institucional</a>
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>Vendedor actualizado</h3>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <script src="boton.js"></script>
+
+
+    </main><br>
+    
+    <footer class ="final">
+        <h5>Contáctenos!<br>
+            Teléfono: 1234567890 <br>
+            Dirección: Calle x # xx-xx <br>
+            e-mail: <br>
+            Redes sociales: <br>
+        </h5>
     </footer>
     
 </body>
