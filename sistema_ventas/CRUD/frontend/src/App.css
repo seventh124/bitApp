@@ -1,0 +1,173 @@
+/*Estos son los estilos de pagina*/
+
+/* Estilos navBar */
+body{
+  font-family: 'Poppins', sans-serif;
+  padding: 90px 20px 0px;
+  background-color: #EFE3D0;
+}
+
+.head-navbar{
+  background-color: #986D8E ;
+  height: 45px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: auto;
+  margin: 0 auto;
+  background-color: #986D8E;
+}
+
+.nav-link{
+  color:white;
+  text-decoration: none;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 40px;
+  line-height: 20px;
+}
+
+.nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item{
+  font-size: 18px;
+  margin: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link{
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover{
+  background-color: #D9CAB3;
+  transition: 0.5s;
+}
+/* Finaliza estilos navBar */
+.botonEliminar{
+  background-color: #87A8A4;
+  color: white;
+  font-family:'Poppins', sans-serif;;
+  text-align: center;
+}
+
+.centro{
+  background-color:#EFE3D0;
+  color: black;
+  font-family: 'Yaldevi', sans-serif;;
+}
+
+.encabezado{
+  background-color: #87A8A4;
+  color: white;
+  font-family:'Poppins', sans-serif;;
+  text-align: center;
+}
+
+.encabezadosales{
+  position: relative;
+  display: inline-block;
+  color: black;
+  font-family:'Poppins', sans-serif;;
+  text-align: center;
+}
+.texto-encima{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tituloEncabezado{ 
+  text-align: center;
+  background-color: #EFE3D0;  
+
+}
+
+.subtitulo{
+  text-align: center;
+  background-color: #87A8A4;
+  color: white;
+
+}
+
+.final{
+  background-color: #986D8E;
+  color: black;
+  font-family:'Poppins', sans-serif;
+  text-align: center;
+}
+
+.tabla1
+table, th, td{
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+th{
+  background-color: #87A8A4;
+  border-bottom: solid 2px #506D84;
+  color: white;
+}
+
+tr:nth-child(even){
+  background-color: #ddd;
+}
+
+
+
+.interfazSistemaVentas{
+  font-weight: bold;
+
+}
+
+.interfazHistorialVentas{
+  font-weight: bold;
+
+}
+.interfazEditarVenta{
+  font-weight: bold;
+
+}
+
+.ventana_emergente{
+  background:#986D8E ;
+  width:25%;
+  color: white;
+  font-family:'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 33px;
+  min-height: 24px;
+  border-radius: 22px;
+  position: absolute;
+  left: 37%;
+  top:95%;
+  display: none;
+}
+#cerrar{
+  position: absolute;
+  right:12px;
+  top: 5%;
+    
+}
