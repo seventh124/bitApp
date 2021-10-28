@@ -10,8 +10,8 @@ function HistorialVentas() {
                     <br></br>
                     <label>
                         Buscar por:{' '}
-                            <input type="text" name="nombre" size="25" placeholder="Ingrese el ID de la venta" controId="formBasicBarcode"></input>{' '}
-                            <input type="text" name="nombre" size="25" placeholder="Ingrese el ID del cliente" controId="formBasicDescription"></input>{' '}
+                            <input type="number" name="nombre" size="25" placeholder="Ingrese el ID de la venta" controId="formBasicBarcode"></input>{' '}
+                            <input type="number" name="nombre" size="25" placeholder="Ingrese el ID del cliente" controId="formBasicDescription"></input>{' '}
                             <input type="text" name="nombre" size="25" placeholder="Ingrese el Nombre del cliente" controId="formBasicDescription"></input>{' '}
                             <button type="submit" className="btn btn-success">Buscar</button>      
                     </label>
