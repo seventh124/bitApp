@@ -2,23 +2,20 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
-            <header className="head-navbar">
-        {/* --Barra de navegacion-- */}
-                <nav className="nav">
-                    <a href="#" className="logo nav-link">BitApp</a>
-                    <ul className="nav-menu">
-                        <li className="nav-menu-item"><a href="" className="nav-menu-link nav-link">Agregar Venta</a></li>
-                        <li className="nav-menu-item"><a href="" className="nav-menu-link nav-link">Mis Ventas</a></li>
-                        <li className="nav-menu-item"><a href="" className="nav-menu-link nav-link">Perfil</a></li>
-                        <li className="nav-menu-item"><a href="" className="nav-menu-link nav-link">Catálogo</a></li>
-                        <li className="nav-menu-item"><a href="" className="nav-menu-link nav-link">Vendedores</a></li>
-                        <li className="nav-menu-item"><a href="" className="nav-menu-link nav-link">Salir</a></li>
-                    </ul>              
-                </nav>
-        {/* --Fin de Barra de navegacion-- */}
-            </header>
-        </div>
+        <h4>
+        <Navbar bg="danger" variant="dark">
+            <Container>
+                <Navbar.Brand href="#home">BitApp</Navbar.Brand>
+                <Nav className="me-auto">
+                <Nav.Link href="#home">Agregar venta</Nav.Link>
+                <Nav.Link href="#features">Mis ventas</Nav.Link>
+                <Nav.Link href="#pricing">Productos</Nav.Link>
+                <Nav.Link href="#pricing">Vendedores</Nav.Link>
+                <Nav.Link href="#pricing">Perfil</Nav.Link>
+            </Nav>
+            </Container>
+        </Navbar>
+        </h4>
         
     );
 };

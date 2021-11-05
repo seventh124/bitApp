@@ -1,150 +1,71 @@
-/*Estos son los estilos para todas las paginas*/
-
-/* Estilos navBar */
-
-body{
-  font-family: 'Poppins', sans-serif;
-  padding: 90px 20px 0px;
-  background-color: #EFE3D0;
+.App {
+  max-width: 100% !important;
 }
 
-.head-navbar{
-  background-color: #986D8E ;
-  height: 45px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.nav{
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
-  max-width: auto;
-  margin: 0 auto;
-  background-color: #986D8E;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.nav-link{
-  color:white;
-  text-decoration: none;
+.App-link {
+  color: #61dafb;
 }
 
-.logo{
-  font-size: 30px;
-  font-weight: bold;
-  padding: 40px;
-  line-height: 20px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.nav-menu{
+.inputBuscar{
+  width: 50% !important;
+}
+
+table{
+  min-width: 500px;
+}
+
+.containerInput{
+  align-items: end;
+  right: 0;
   display: flex;
-  margin-right: 40px;
-  list-style: none;
+  justify-content: flex-end;
+  padding-bottom: 25px;
 }
 
-.nav-menu-item{
-  font-size: 18px;
-  margin: 25px;
-  line-height: 25px;
-  text-transform: uppercase;
-  width: max-content;
+@media (max-width: 988px){
+  
+  .inputBuscar{
+    width: 100% !important;
+  }
+
+  .App{
+    padding: 40px 5px;
+  }
+
+  
+.containerInput{
+  padding-bottom: 15px;
 }
 
-.nav-menu-link{
-  padding: 8px 12px;
-  border-radius: 3px;
 }
-
-.nav-menu-link:hover{
-  background-color: #D9CAB3;
-  transition: 0.5s;
-}
-/* Finaliza estilos navBar */
-
-.centro{
-  background-color:#EFE3D0;
-  color: black;
-  font-family: 'Yaldevi', sans-serif;;
-}
-
-.tituloEncabezado{ 
-  text-align: center;
-  background-color:#EFE3D0;  
-
-}
-
-.subtitulo{
-  text-align: center;
-  background-color: #87A8A4;
-  color: white;
-
-}
-.final{
-  background-color: #986D8E;
-  color: white;
-  font-family:'Poppins', sans-serif;
-  text-align: center;
-}
-
-/*Final de estilos para todas las paginas*/
-
-/*Inicio estilos propios para el cuerpo de la pagina*/
-
-.tabla1
-table, th, td{
-  border-collapse: collapse;
-  padding: 5px;
-  text-align: center;
-}
-th{
-  background-color: #87A8A4;
-  border-bottom: solid 2px #506D84;
-  color: white;
-}
-
-tr:nth-child(even){
-  background-color: #ddd;
-}
-
-.ventanaEmergente{
-  background-color:#986D8E;
-  width: 20%;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  padding: 30px;
-  min-height: 125px;
-  border-radius: 20px;
-  position: absolute;
-  left: 37%;
-  top: 37%;
-  display: none;
-}
-
-
-.interfazRegistroProductos{
-  font-weight: bold;
-
-}
-
-.interfazActualizacionProductos{
-  font-weight: bold;
-
-}
-.interfazConsultaProductos{
-  font-weight: bold;
-
-}
-
-#cerrarVentanaEmergente{
-  position: absolute;
-  right: 3px;
-  top: 1px;
-}
-
-.lupaBusqueda:hover{
-  cursor: pointer;
-}
-

@@ -1,4 +1,3 @@
-import './App.css';
 import {useState, useEffect} from 'react';
 import Axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -78,29 +77,33 @@ function RegistroProductos(){
     }
 
     return(
-        <div> 
+        <div>
+                <div className ="centro">
+                    <br></br>
+                    <h2><center>¡Bienvenidos!</center></h2>
+                    <br></br>
+                </div> 
             <Container>
-                <center>
-                    REGISTRO DE PRODUCTOS
-                </center>
+                    <h3>REGISTRO DE PRODUCTOS</h3>
+                    <br></br>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicBarcode">
-                        <Form.Label>Código de barras</Form.Label>
+                        <Form.Label><h4>Código de barras</h4></Form.Label>
                         <Form.Control type="number" placeholder="Digite el código de barras del producto" onChange = {(e) => {
                             set_barcode_add(e.target.value);
                         }} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicDescription">
-                        <Form.Label>Descripción</Form.Label>
+                        <Form.Label><h4>Descripción</h4></Form.Label>
                         <Form.Control type="text" placeholder="Digite el nombre del producto" onChange = {(e) => {
                             set_description_add(e.target.value);
                         }} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicUnitCost">
-                        <Form.Label>Valor unitario</Form.Label>
-                        <Form.Control type="number" placeholder="Ingrese el valor unitario del producto" onChange = {(e) => {
+                        <Form.Label><h4>Valor unitario</h4></Form.Label>
+                        <Form.Control type="number" placeholder="Digite el valor unitario del producto en números" onChange = {(e) => {
                             set_unit_cost_add(e.target.value);
                         }} />
                     </Form.Group>
@@ -133,20 +136,22 @@ function RegistroProductos(){
                 </Form>
 
                 <hr/>
-                <center>
-                    CONSULTA DE PRODUCTOS
-                </center>
-
+                    <br></br>
+                    <h3>CONSULTA DE PRODUCTOS</h3>
+                    <br></br>
+                
                 <div className="containerInput">
                     <input
                       className="form-control inputBuscar"
                       value={busqueda}
-                      placeholder="Búsqueda por codigo de barras o Descripcion"
+                      placeholder="Búsqueda por Codigo de barras o Descripcion"
                       onChange={handleChange}
                     />
                     <button className="btn btn-success">
                       <FontAwesomeIcon icon={faSearch}/>
                     </button>
+                    <br></br>
+                    <br></br>
                 </div>
                 
                 <Table striped bordered hover>
@@ -202,29 +207,30 @@ function RegistroProductos(){
                             )
                         }
                     </tbody>
+                    <br></br>
                 </Table>
                 <hr/>
-                <center>
-                    ACTUALIZACION DE PRODUCTOS
-                </center>
+                    <br></br>
+                    <h3>ACTUALIZACIÓN DE PRODUCTOS</h3>
+                    <br></br>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicBarcode">
-                        <Form.Label>Código de barras</Form.Label>
+                        <Form.Label><h4>Código de barras</h4></Form.Label>
                         <Form.Control disabled="true" id="barcode_update" type="number"  onChange = {(e) => {
                             set_barcode_update(e.target.value);
                         }} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicDescription">
-                        <Form.Label>Descripción</Form.Label>
+                        <Form.Label><h4>Descripción</h4></Form.Label>
                         <Form.Control id ="description_update" type="text" placeholder="Digite el nombre del producto" onChange = {(e) => {
                             set_description_update(e.target.value);
                         }} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicUnitCost">
-                        <Form.Label>Valor unitario</Form.Label>
-                        <Form.Control id="unit_cost_update" type="number" placeholder="Ingrese el valor unitario del producto" onChange = {(e) => {
+                        <Form.Label><h4>Valor unitario</h4></Form.Label>
+                        <Form.Control id="unit_cost_update" type="number" placeholder="Ingrese el valor unitario del producto en números" onChange = {(e) => {
                             set_unit_cost_update(e.target.value);
                         }} />
                     </Form.Group>
@@ -256,6 +262,8 @@ function RegistroProductos(){
                             update_product(id_update)}}>
                         ACTUALIZAR PRODUCTO
                     </Button>
+                    <br></br>
+                    <br></br>
                 </Form>
                 
             </Container>
