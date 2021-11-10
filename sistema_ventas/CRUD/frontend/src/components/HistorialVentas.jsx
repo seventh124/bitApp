@@ -1,6 +1,10 @@
 import React from 'react';
 
+
 function HistorialVentas() {
+
+    
+
     return (
         /* Inicio SubTitulo Historial de Ventas Realizadas */
         <div className = "centro">
@@ -10,9 +14,9 @@ function HistorialVentas() {
                     <br></br>
                     <label>
                         Buscar por:{' '}
-                            <input type="number" name="nombre" size="25" placeholder="Ingrese el ID de la venta" controId="formBasicBarcode"></input>{' '}
-                            <input type="number" name="nombre" size="25" placeholder="Ingrese el ID del cliente" controId="formBasicDescription"></input>{' '}
-                            <input type="text" name="nombre" size="25" placeholder="Ingrese el Nombre del cliente" controId="formBasicDescription"></input>{' '}
+                            <input type="number" name="nombre" size="25" placeholder="Ingrese el ID de la venta" controId="IdVenta"></input>{' '}
+                            <input type="number" name="nombre" size="25" placeholder="Ingrese el ID del cliente" controId="IdCliente"></input>{' '}
+                            <input type="text" name="nombre" size="25" placeholder="Ingrese el Nombre del cliente" controId="NombreCliente"></input>{' '}
                             <button type="submit" className="btn btn-success">Buscar</button>      
                     </label>
 
