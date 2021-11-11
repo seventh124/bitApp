@@ -1,0 +1,49 @@
+/* Estilos navBar */
+
+.mynabvar{
+  background-color: #986D8E;
+}
+
+
+.nav{
+background: #986D8E !important; 
+
+}
+
+/* Finaliza estilos navBar */
+
+.centro{
+  background-color:#EFE3D0;
+  color: black;
+  font-family:  sans-serif;
+}
+
+.tituloEncabezado{ 
+  text-align: center;
+  background-color:#EFE3D0;  
+
+}
+
+.subtitulo{
+  text-align: center;
+  background-color: #87A8A4;
+  color: white;
+
+}
+.final{
+  width: 100%;
+  background-color: #986D8E;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  position: absolute;
+  
+} 
+
+body{
+  font-family: 'Poppins', sans-serif;
+  
+  background-color: #EFE3D0;
+}
+
+/*Final de estilos para todas las paginas*/
