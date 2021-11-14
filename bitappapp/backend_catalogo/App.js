@@ -14,7 +14,7 @@ app.use(express.json());
 
 //Conexión con mongo atlas
 const mongoose = require('mongoose');
-const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0.gvys3.mongodb.net/${process.env.DATABASE}?retryWrites=true&w=majority`
+const uri = `mongodb+srv://ingrid_bernal_velandia:BitApp@cluster0.gvys3.mongodb.net/bit_app_productos?retryWrites=true&w=majority`
 const option = {useNewUrlParser: true, useUnifiedTopology: true};
 mongoose.connect(uri, option)
 .then(() => console.log("Base de datos conectada correctamente"))

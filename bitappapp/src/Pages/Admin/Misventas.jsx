@@ -108,7 +108,48 @@ const Misventas = () => {
     
             })
         }
+
+    // para el BUSCADOR entonces tenemos lo sigte.
+
+    //DATOS DINAMICOS
+    const [sales, set_sales] = useState([]);
+
+    //daTOS ESTATICOS los debe tomar de la DB
     
+
+    //PARA CONTROLAR LO QUE SE DIGITA EN LA BUSQUEDA
+    const [busqueda, set_busqueda] = useState("");
+    
+    const peticionGet = async() => {
+        Axios.get('http://localhost:3001/api/v1/venta/list').then(res =>{
+            console.log(res.data.sales);
+            set_sales(res.data.sales);
+        }).catch(error=>{
+          console.log(error);
+        })
+    }
+
+    const handleChange=e=>{
+        set_busqueda(e.target.value);
+        filtrar(e.target.value);
+    }
+
+    const filtrar=(terminoBusqueda)=>{
+        var resultadosBusqueda= sales.filter((elemento)=>{
+          if(elemento.IdVenta.toNumber().toLowerCase().includes(terminoBusqueda.toLowerCase())
+          || elemento.IdCliente.toNumber().toLowerCase().includes(terminoBusqueda.toLowerCase())
+          || elemento.NombreCliente.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+          ||elemento.ApellidoCliente.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+          ){
+            return elemento;
+          }
+        });
+        set_sales(resultadosBusqueda);
+      }
+    useEffect(()=>{
+        peticionGet();
+        },[])
+
         return (
     
             <div>
@@ -235,6 +276,13 @@ const Misventas = () => {
                         <center>
                             <h3 className="subtitulo">Historial Ventas </h3><br></br>
                         </center> 
+                    </div>
+
+                    <div>
+                        Buscar por:{' '}
+                            <input value={busqueda} size="60" placeholder="Busqueda por Id Venta, Id Cliente, Nombre Cliente o Apellido Cliente" onChange={handleChange}></input>{' '}
+                            
+                            <button type="submit" className="btn btn-success">Buscar</button>      
                     </div>
     
                     <Table striped bordered hover>
