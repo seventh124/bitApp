@@ -12,6 +12,7 @@ function EditarVenta() {
 
     const add_to_db = () => {
         console.log(IdVenta_add + IdCliente_add + NombreCliente_add + ApellidoCliente_add + TelefonoCliente_add + DireccionCliente_add)
+        Axios.add('localhost:3001/api/v1/venta/venta')
 
     }
     /* FALTA MIRAR QUE HACER CON EL DELETE */

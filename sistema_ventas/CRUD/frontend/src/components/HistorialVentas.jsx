@@ -1,9 +1,6 @@
 import React from 'react';
 
-
-function HistorialVentas() {
-
-    
+function HistorialVentas() { 
 
     return (
         /* Inicio SubTitulo Historial de Ventas Realizadas */

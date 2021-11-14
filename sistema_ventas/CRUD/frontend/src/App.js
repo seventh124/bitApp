@@ -2,9 +2,7 @@ import './App.css'
 /*COMPONENTS*/
 import Header from './components/Header';
 import Footer from './components/Footer';
-import EditarVenta from './components/EditarVenta';
-import HistorialVentas from './components/HistorialVentas';
-import Encabezado from './components/Encabezado';
+import Ventas from './components/Ventas';
 
 
 
@@ -16,9 +14,7 @@ function App() {
       </header>
 
       <main>
-        <div><br></br><Encabezado /></div>
-        <div><HistorialVentas /></div>
-        <div><EditarVenta /></div>
+        <div><Ventas/></div>
         
       </main>
 

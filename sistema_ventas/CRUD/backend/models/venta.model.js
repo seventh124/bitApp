@@ -33,31 +33,31 @@ const ventas_schema = new mongoose.Schema({
         requiered: true,
         min: 1
     },
-    IdProducto: {
+    barcode: {
         type: Number,
-        requiered: true,
+        default: true,
         min: 1
 
     },
-    Descripcion: {
+    description: {
         type: String,
-        requiered: true,
+        default: true,
         min: 1
         
     },
     Cantidad: {
         type: Number,
-        requiered: true,
+        default: true,
         min: 1
     },
-    ValorUnitario: {
+    unit_cost: {
         type: Number,
-        requiered: true,
+        default: true,
         min: 1
     },
     ValorTotal: {
         type: Number,
-        requiered: true,
+        default: true,
         min: 1
     }
 });
